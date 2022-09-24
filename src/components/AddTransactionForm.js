@@ -13,6 +13,11 @@ function handleChange(event){
   const name = event.target.name;
   let value = event.target.value;
 };
+
+setFormData({
+  ...formData,
+  [name].value
+});
   return (
     <div className="ui segment">
       <form className="ui form">
