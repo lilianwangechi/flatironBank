@@ -9,6 +9,10 @@ Category:"",
 Amount:""
 })
 
+function handleChange(event){
+  const name = event.target.name;
+  let value = event.target.value;
+};
   return (
     <div className="ui segment">
       <form className="ui form">
