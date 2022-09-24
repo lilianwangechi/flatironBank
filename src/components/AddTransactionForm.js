@@ -1,6 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 
 function AddTransactionForm() {
+//adding a new transaction
+const[formData,setFormData] =useState({
+Date:"",
+Description:"",
+Category:"",
+Amount:""
+})
+
   return (
     <div className="ui segment">
       <form className="ui form">
