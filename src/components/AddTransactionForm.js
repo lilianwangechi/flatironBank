@@ -16,11 +16,16 @@ function handleChange(event){
 
 setFormData({
   ...formData,
-  [name]:value
+  [name]:value,
 });
+}
+function handleSubmit(event){
+  event.preventDefault();
+  console.log(formData)
+}
   return (
     <div className="ui segment">
-      <form className="ui form">
+      <form onSubmit ={handleSubmit} className="ui form">
         <div className="inline fields">
           <input type="date" onChange={handleChange} name="date" value={formData.date}/>
           <input type="text" onChange={handleChange} name="description"  value={formData.description} placeholder="Description" />
