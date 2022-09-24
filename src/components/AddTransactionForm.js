@@ -22,10 +22,10 @@ setFormData({
     <div className="ui segment">
       <form className="ui form">
         <div className="inline fields">
-          <input type="date" name="date" value={formData.date}/>
-          <input type="text" name="description" value={formData.description} placeholder="Description" />
-          <input type="text" name="category" value={formData.category} placeholder="Category" />
-          <input type="number" name="amount"value={formData.amount}  placeholder="Amount" step="0.01" />
+          <input type="date" onChange={handleChange} name="date" value={formData.date}/>
+          <input type="text" onChange={handleChange} name="description"  value={formData.description} placeholder="Description" />
+          <input type="text" onChange={handleChange} name="category" value={formData.category} placeholder="Category" />
+          <input type="number" onChange={handleChange} name="amount"value={formData.amount}  placeholder="Amount" step="0.01" />
         </div>
         <button className="ui button" type="submit">
           Add Transaction
