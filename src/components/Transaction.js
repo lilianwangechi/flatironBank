@@ -12,7 +12,8 @@ amount:""
 
   useEffect(()=>{
     fetch("http://localhost:8001/transactions")
-    .then
+    .then((response)=>response.json())
+    .then((transactionData)=>setTransactionData(transactionData))
   })
   return (
     <tr>
