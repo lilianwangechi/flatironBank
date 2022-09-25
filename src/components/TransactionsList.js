@@ -1,6 +1,6 @@
 import React from "react";
-import Transaction from "./Transaction";
-import AddTransactionForm from "./AddTransactionForm";
+//import Transaction from "./Transaction";
+//import AddTransactionForm from "./AddTransactionForm";
 
 function TransactionsList() {
   
