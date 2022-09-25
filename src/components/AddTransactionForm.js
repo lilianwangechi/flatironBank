@@ -12,7 +12,6 @@ amount:""
 function handleChange(event){
   const name = event.target.name;
   let value = event.target.value;
-};
 
 setFormData({
   ...formData,
@@ -23,6 +22,7 @@ function handleSubmit(event){
   event.preventDefault();
   console.log(formData)
 }
+
   return (
     <div className="ui segment">
       <form onSubmit ={handleSubmit} className="ui form">
