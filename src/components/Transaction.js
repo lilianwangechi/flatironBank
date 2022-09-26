@@ -2,6 +2,7 @@ import React,{useEffect,useState} from "react";
 
 
 function Transaction() {
+  
   const [transactions,setAddTransactions]= useState([]);
   useEffect(()=>{
   getTransactions();
@@ -31,7 +32,7 @@ function Transaction() {
   );
 }
 
-export default Transaction;
+export default Transaction
 
 
 // import React from "react";

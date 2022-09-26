@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function AddTransactionForm() {
+function AddTransactionForm(props) {
 //adding a new transaction
 const[formData,setFormData] =useState({
 date:"",
@@ -27,7 +27,7 @@ function handleSubmit(event){
     <div className="ui segment">
       <form onSubmit ={handleSubmit} className="ui form">
         <div className="inline fields">
-          <input type="date" onChange={handleChange} name="date" value={formData.date}/>
+          <input type="date" onChange={handleChange} name="date" value={formData.date} />
           <input type="text" onChange={handleChange} name="description"  value={formData.description} placeholder="Description" />
           <input type="text" onChange={handleChange} name="category" value={formData.category} placeholder="Category" />
           <input type="number" onChange={handleChange} name="amount"value={formData.amount}  placeholder="Amount" step="0.01" />
@@ -41,3 +41,19 @@ function handleSubmit(event){
 }
 
 export default AddTransactionForm;
+
+
+// return (
+//   <div className="ui segment">
+//     <form onSubmit ={props.handleSubmit} className="ui form">
+//       <div className="inline fields">
+//         <input type="date" onChange={props.handleChange} name="date" value={props.formData.date} />
+//         <input type="text" onChange={props.handleChange} name="description"  value={props.formData.description} placeholder="Description" />
+//         <input type="text" onChange={props.handleChange} name="category" value={props.formData.category} placeholder="Category" />
+//         <input type="number" onChange={props.handleChange} name="amount"value={props.formData.amount}  placeholder="Amount" step="0.01" />
+//       </div>
+//       <button className="ui button" type="submit">
+//         Add Transaction
+//       </button>
+//     </form>
+//   </div>

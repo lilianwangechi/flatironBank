@@ -1,7 +1,10 @@
 import React from "react";
 
-function Search() {
-
+function Search(){
+  // function handleSearchClick(){
+  //   const newTransactionArray = transactions.filter((transaction)=>
+  //   transaction.description === description);
+  // }
   
   return (
     <div className="ui large fluid icon input">

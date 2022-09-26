@@ -1,9 +1,10 @@
 import React from "react";
 import Transaction from "./Transaction";
-import AddTransactionForm from "./AddTransactionForm";
+//import AddTransactionForm from "./AddTransactionForm";
 
 function TransactionsList() {
   
+ 
   return (
     <table className="ui celled striped padded table">
       <tbody>
@@ -23,8 +24,9 @@ function TransactionsList() {
         </tr>
       
  {/* render a list of <Transaction> components here */}
+
      <Transaction/>
-      <AddTransactionForm/> 
+
 
       </tbody>
     </table>
@@ -32,3 +34,9 @@ function TransactionsList() {
 }
 
 export default TransactionsList;
+
+// <AddTransactionForm
+// formData={formData}
+// handleChange={handleChange}
+// handleSubmit={handleSubmit}
+// />
