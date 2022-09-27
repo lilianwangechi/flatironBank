@@ -97,6 +97,41 @@
       "category": "nnnm",
       "amount": "56",
       "id": 14
+    },
+    {
+      "date": "2022-09-05",
+      "description": "jjk",
+      "category": "nnnm",
+      "amount": "9",
+      "id": 15
+    },
+    {
+      "date": "2022-09-05",
+      "description": "jjk",
+      "category": "nnnm",
+      "amount": "9",
+      "id": 16
+    },
+    {
+      "date": "2022-09-01",
+      "description": "jjk",
+      "category": "nnnm",
+      "amount": "89",
+      "id": 17
+    },
+    {
+      "date": "2022-09-17",
+      "description": "lemons",
+      "category": "food",
+      "amount": "1000",
+      "id": 18
+    },
+    {
+      "date": "2022-09-07",
+      "description": "oranges",
+      "category": "fruits",
+      "amount": "780",
+      "id": 19
     }
   ]
 }

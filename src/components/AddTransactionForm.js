@@ -8,7 +8,7 @@ description:"",
 category:"",
 amount:""
 })
-
+//function for updating the user
 function handleChange(event){
   const name = event.target.name;
   let value = event.target.value;
@@ -18,9 +18,23 @@ setFormData({
   [name]:value,
 });
 }
+//function to handle submissions by the user
 function handleSubmit(event){
   event.preventDefault();
   console.log(formData)
+
+fetch("http://localhost:8001/transactions",{
+  method:"POST",
+  headers:{
+    "Content-Type":"application/json",
+  },
+  body:JSON.stringify(formData),
+})
+.then((r)=> r.json())
+.then((newTransaction)=> console.log(newTransaction));
+//console.log(itemData);
+// console.log("name:",name);
+// console.log("category:",category);
 }
 
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import AddTransactionForm from "./AddTransactionForm";
 import Transaction from "./Transaction";
 //import AddTransactionForm from "./AddTransactionForm";
 
@@ -24,7 +25,6 @@ function TransactionsList() {
         </tr>
       
  {/* render a list of <Transaction> components here */}
-
      <Transaction/>
 
 
