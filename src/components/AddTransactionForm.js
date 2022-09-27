@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function AddTransactionForm(props) {
+function AddTransactionForm({onAddTransaction}) {
 //adding a new transaction
 const[formData,setFormData] =useState({
 date:"",
@@ -31,7 +31,7 @@ fetch("http://localhost:8001/transactions",{
   body:JSON.stringify(formData),
 })
 .then((r)=> r.json())
-.then((newTransaction)=> console.log(newTransaction));
+.then((newTransaction)=> onAddTransaction(newTransaction));
 //console.log(itemData);
 // console.log("name:",name);
 // console.log("category:",category);

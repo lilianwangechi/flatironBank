@@ -132,6 +132,20 @@
       "category": "fruits",
       "amount": "780",
       "id": 19
+    },
+    {
+      "date": "2022-09-29",
+      "description": "lemons",
+      "category": "food",
+      "amount": "45",
+      "id": 20
+    },
+    {
+      "date": "2022-09-10",
+      "description": "donedone",
+      "category": "ihopeitworks",
+      "amount": "0",
+      "id": 21
     }
   ]
 }

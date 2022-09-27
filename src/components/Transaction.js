@@ -1,35 +1,42 @@
-import React,{useEffect,useState} from "react";
+//import React,{useEffect,useState} from "react";
+import React from "react";
 
 
-function Transaction() {
+function Transaction({transaction}) {
   
-  const [transactions,setAddTransactions]= useState([]);
-  useEffect(()=>{
-  getTransactions();
-   },[])
+//   const [transactions,setAddTransactions]= useState([]);
+//   useEffect(()=>{
+//   getTransactions();
+//    },[])
 
-  function getTransactions(){
-    fetch("http://localhost:8001/transactions")
-    .then((response)=>response.json())
-    .then((data)=>{
-      console.log(data)
-      setAddTransactions(data)  
-  })
-  .catch((err)=>{
-    console.log(err);
-  });
-}
-  return (
-    transactions.map((transaction)=>(
-    <tr key={transactions.id}>
-      <td>{transaction.date}</td>
-      <td>{transaction.description}</td>
-      <td>{transaction.category}</td>
-      <td>{transaction.amount}</td>
-    </tr>
-
-))
-  );
+//   function getTransactions(){
+//     fetch("http://localhost:8001/transactions")
+//     .then((response)=>response.json())
+//     .then((transactions)=>{
+//       console.log(transactions)
+//       setAddTransactions(transactions)  
+//   })
+//   .catch((err)=>{
+//     console.log(err);
+//   });
+// }
+  // return (
+  //   transactions.map((transaction)=>(
+  //   <tr key={transactions.id}>
+  //     <td>{transaction.date}</td>
+  //     <td>{transaction.description}</td>
+  //     <td>{transaction.category}</td>
+  //     <td>{transaction.amount}</td>
+  //   </tr>
+ return (
+  <tr >
+    <td>{transaction.date}</td>
+    <td>{transaction.description}</td>
+    <td>{transaction.category}</td>
+     <td>{transaction.amount}</td>
+     </tr>
+ )
+  
 }
 
 export default Transaction
